@@ -1,6 +1,26 @@
 {
+  "name": "mern-real-state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-aser/mern-real-estate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/b-aser/mern-real-estate/issues"
+  },
+  "homepage": "https://github.com/b-aser/mern-real-estate#readme",
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "tailwindcss": "^4.2.2"
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
   }
 }
