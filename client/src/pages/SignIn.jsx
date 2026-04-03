@@ -55,7 +55,7 @@ const SignIn = () => {
           className="border border-slate-300 p-3 rounded-lg"
           type="email"
           placeholder="Email"
-          id="username"
+          id="email"
           onChange={handleChange}
         />
         <input
