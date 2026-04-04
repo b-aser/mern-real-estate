@@ -1,4 +1,6 @@
-# React + Vite
+# MERN Real Estate Project
+
+This Project is to develop skills in React, Express, Mongodb and Nodejs
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
