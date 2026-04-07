@@ -62,22 +62,31 @@ const Profile = () => {
         />
         <img
           onClick={() => fileInputRef.current.click()}
-          src={currentUser.avatar}
+          src={formData.avatar || currentUser.avatar}
           alt="Avatar"
           className="cursor-pointer rounded-full h-24 w-24 object-cover self-center mt-2"
         />
+        <p className="text-center text-sm">
+          {
+            fileUplaodError ? (
+              <span className="text-red-700">Error uploading file</span>
+            ) : filePerc > 0 && filePerc < 100 ? (
+              <span className="text-blue-700">Uploading: {filePerc}%</span>
+            ) : filePerc === 100 ? (
+              <span className="text-green-700">Image uploaded successfully</span>
+            ) : null
+          }
+        </p>
         <input
           type="text"
           id="username"
-          placeholder={currentUser.username}
-          defaultValue={currentUser.username}
+          placeholder="username"
           className="border p-3 rounded-lg"
         />
         <input
           type="text"
           id="email"
-          placeholder={currentUser.email}
-          defaultValue={currentUser.email}
+          placeholder="email"
           className="border p-3 rounded-lg"
         />
         <input
