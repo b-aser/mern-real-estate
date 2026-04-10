@@ -22,6 +22,8 @@ import {
   signOutUserFailure
 } from "../redux/user/userSlice.js";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+
 
 const Profile = () => {
   const { currentUser, loading, error } = useSelector((state) => state.user);
@@ -179,6 +181,9 @@ const Profile = () => {
         >
           {loading ? "Updating..." : "Update"}
         </button>
+        <Link className="bg-green-700 text-white rounded-lg p-3 uppercase hover:opacity-90 text-center" to={"/create-listing"}>
+        Create Listing
+        </Link>
       </form>
       <div className="flex justify-between mt-5">
         <span onClick={handleDeleteUser} className="text-red-700 cursor-pointer hover:underline">
